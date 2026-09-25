@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PROJECT HOME</title>
+    <style>
+      .header {
+        height: 55px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        padding-top: 20px;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+      } 
+      .dashb{
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        
+        }
+      .b1{
+        background-color: white;
+        border-radius: 20px;
+        color: rgb(152, 150, 150);
+        margin-top: 20px;
+        margin-left: 50px;
+        padding-bottom: 10px;
+        padding-right: 5px;
+        padding-left: 5px;
+        border-style: none;
+      }
+      .b2{
+        background-color: rgb(127, 126, 126);
+        border-radius: 20px;
+        color: rgb(253, 251, 251);
+        margin-left: 50px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 5px;
+        padding-left: 5px;
+        border-style: none;
+      }
+      .b3{
+          background-color: rgb(127, 126, 126);
+        border-radius: 20px;
+        color: rgb(253, 251, 251);
+        margin-left: 10px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 5px;
+        padding-left: 5px;
+        border-style: none;
+      }
+      .b4{
+         background-color: rgb(165, 243, 88);
+        border-radius: 20px;
+        color: rgb(253, 251, 251);
+        margin-top: 30px;
+        margin-left: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-style: none;
+      }
+      .number{
+        display: flex;
+        flex-direction: row;
+        font-family: arial;
+        font-size: xx-large;
+        text-align: center;
+        justify-content: space-between;
+        color: rgb(114, 112, 112);
+        margin-left: 60px;
+        margin-right:60px;
+        font-style: italic;
+      }
+      .number p{
+        font-size: small;
+      }
+     .culture{
+      display: block;
+      margin-left: 200px;
+      margin-top: 200px;
+      border-radius: 5;
+     }
+     .gardens{
+      display: grid;
+        grid-template-columns:1fr 1fr 1fr ;
+        column-gap: 16px;
+        row-gap: 40px;
+        border: 2px;
+     }
+     .but{
+      background-color: rgb(126, 180, 72);
+        border-radius: 20px;
+        color: rgb(253, 251, 251);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 30px;
+        padding-left: 30px;
+        border-style: none;
+     }
+     a{
+      text-decoration: none;
+      color: black;
+     }
+     .but2{
+       background-color: white;
+        border-radius: 20px;
+        color: black;
+        margin-left: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 30px;
+        padding-left: 30px;
+        
+     }
+     .view{
+      background-color: rgb(126, 180, 72);
+        border-radius: 20px;
+        color: rgb(253, 251, 251);
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-left: 500px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        border-style: none;
+     }
+     .loc{
+       background-color: white;
+        border-radius: 20px;
+        color: black;
+        margin-left: 500px;
+        margin-top: 80px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-right: 25px;
+        padding-left: 25px;
+      
+     }
+     .statepic{
+      display: grid;
+        grid-template-columns:1fr 1fr 1fr ;
+        column-gap: 16px;
+        row-gap: 40px;
+        border: 2px;
+     }
+     .cp{
+      border-radius: 10px;
+      border-style: none;
+     }
+     .tes{
+       background-color: white;
+        border-radius: 20px;
+        color: black;
+        margin-left: 500px;
+        margin-top: 80px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-right: 25px;
+        padding-left: 25px;
+        border-style: none;
+     }
+     .names{
+      justify-content: center;
+     }
+     .last{
+       display: flex;
+       flex-direction: row;
+        column-gap: 30px;
+        border: 2px;
+        background-color: white;
+        margin-top: 30px;
+     }
+     .footer{
+       background-color: rgb(126, 180, 72);
+       color: white;
+       padding: 5px;
+       margin: -8px;
+     }
+     .section{
+      display: flex;
+      flex-direction: row;
+      column-gap: 20px;
+     }
+     .about{
+      margin-top: 50px;
+      padding-top: 20px;
+     }
+     .gardens p{
+      color: rgb(168, 166, 166);
+     }
+     .footer p{
+        color: white;
+     }
+   
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logos/adrlogo.svg" style="margin-left: 30px;">
+        <a href="file:///C:/Users/LENOVO/Desktop/my%20tech%20journey/suntech-html%20training/index.html/HOME.html">Home</a>
+        Properties
+            <select>
+                <option value="Ogun">Ogun</option>
+                <option value="Plateau">Plateau</option>
+                <option value="Nassarawa">Nassarawa</option>
+                <option value="Lagos">Lagos</option>
+                <option value="Osun">Osun</option>
+                <option value="Oyo">Oyo</option>
+                <option value="Ekiti">Ekiti</option>
+                <option value="Abuja">Abuja</option>
+                <option value="Niger">Niger</option>
+            </select>
+        <a href="file:///C:/Users/LENOVO/Desktop/my%20tech%20journey/suntech-html%20training/index.html/HOME-LISTING.HTML">Home Listing</a>
+            <select>
+              <option value="Rent">Rent</option>
+              <option value="Video Series">Video Series</option>
+              <option value="Off Plan">Off Plan</option>
+              <option value="Completed">Completed</option>
+            </select>
+             <a href="file:///C:/Users/LENOVO/Desktop/my%20tech%20journey/suntech-html%20training/index.html/ABOUT-US.HTML">About us</a>
+             <a href="file:///C:/Users/LENOVO/Desktop/my%20tech%20journey/suntech-html%20training/index.html/VIRTUAL-TOUR.HTML">Virtual Tour</a>
+             <a href="file:///C:/Users/LENOVO/Desktop/my%20tech%20journey/suntech-html%20training/index.html/CAREERS.HTML">Career</a>
+             <a href="file:///C:/Users/LENOVO/Desktop/my%20tech%20journey/suntech-html%20training/index.html/CONTACT-US.HTML">Contact Us</a>
+             <a href="file:///C:/Users/LENOVO/Desktop/my%20tech%20journey/suntech-html%20training/index.html/Login-to-dashboard.html"><button class="dashb" style="margin-right: 30px;">Login to Dashboard</button></a>
+    </div>
+    <aside style=" padding-top: 80px;">
+      <div style="display: flex; flex-direction: row;">
+        
+      <div style="margin-top: 100px; margin-left: 80px;">
+        <img src="logos/ig logo.png" height="20px" width="20px"><br><br>
+      <img src="logos/x logo.png" height="20px" width="20px"><br><br>
+      <img src="logos/tiktok logo.png" height="20px" width="20px"><br><br>
+      <img src="logos/wat logo.png" height="20px" width="20px"><br><br>
+      <img src="logos/in logo.png" height="20px" width="20px"><br><br>
+      <img src="logos/fb logo.png" height="20px" width="20px">
+      </div>
+      <div class="slider">
+        <img src="pictures/slider5987.jpeg" height="650px" width="1100px" style="border-radius: 30px;margin-left: 50px;">
+      </div>
+      </div>
+      
+    </aside>
+      
+      <div class="number">
+        <div>
+        <h1>100+</h1>
+        <p>Properties</p>
+      </div>
+      <div>
+        <h1>200K+</h1>
+        <p>Number of Clients</p>
+      </div>
+      <div>
+        <h1>3000+</h1>
+        <p>Team Members</p>
+      </div>
+      <div>
+        <h1>70+</h1>
+        <p>Location</p>
+      </div>
+      <div>
+        <h1>14+</h1>
+        <p>Years of Exp</p>
+      </div>
+      </div>
+    <div style="background-image: url(pictures/sugarland-estate.jpg);background-color: black; background-repeat: no-repeat; background-size: cover;  background-attachment: scroll; margin-left: -20px; margin-right: -20px;">
+      <div style="height: 500px; width: 500px; padding-top: 100px; font-family: arial; font-size: larger;">
+          <button class="b1"><img src="logos/percent-icon.svg">Latest Offers</button>
+        <h1 style="margin-left: 50px; color: white;">Sugarland Estate</h1>
+        <button class="b2">Property Type:Land</button>
+        <button class="b3">Property Size: 500</button>
+        <p style="color: white; margin-left: 50px;">Ilisan, Ogun Nigeria</p>
+        <button class="b4">View All Latest Offers</button>
+      </div>
+    </div>
+    <section class="section">
+      <div class="culture">
+      <img src="pictures/our-culture.png" height="400" width="400" style="border-radius: 20px; ">
+     </div>
+     <div class="about">
+      <p style="text-align: left; margin-left: 50px;"><img src="logos/people-icon.svg">About Us</p>
+      <h1 style="text-align: left; margin-left: 50px; font-size: 50px;">About Us</h1>
+      <p style="color: rgb(126, 125, 125); margin-right: 250px; margin-left: 50px; margin-bottom: 10px;">Adron Homes Properties is one of Nigeria’s leading real estate and property development companies, renowned for delivering secure, affordable and premium housing solutions tailored to individuals and families across all economic classes.
+      </p>
+      <p style="color:  rgb(126, 125, 125); margin-right: 250px; margin-left: 50px; margin-bottom: 10px;">
+        Driven by innovation and excellence, the company has continued to transform the real estate landscape through world-class developments, strategic infrastructure investments and customer-centric solutions that create sustainable long-term value. Beyond developing properties by our arrays of professionals, Adron Homes is committed to building thriving communities where dreams are nurtured, investments are protected and futures are secured. With a rapidly expanding presence across Nigeria and a vision aligned with global real estate standards, the company continues to position itself as a proudly African brand with international relevance and impact.
+      </p>
+      <p style="color:  rgb(126, 125, 125); margin-right: 250px; margin-left: 50px;">
+        Through visionary leadership, integrity, innovation and an unwavering passion for development, Adron Homes is redefining excellence while creating communities that compete with the best across the world.
+      </p>
+      <a href="file:///C:/Users/Lenovo%20New/Desktop/suntech-html%20training/MY%20PROJECT%20FOLDER/ABOUT-US.HTML"><button style="background-color: rgb(126, 180, 72); padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; border-radius: 30px;border-style: none; margin-left: 50px; margin-bottom: 70px;">Learn More</button></a>
+    </div>
+  </section>
+    <div style="background-color: rgb(244, 241, 241); padding-top: 100px;">
+      <div style="text-align: center; margin-bottom: 100px;">
+      <button style="background-color: white; border-radius: 30px; border-style: none; padding-bottom: 10px;padding-left: 10px;padding-right: 10px; padding-top: 10px;"><img src="">Handpick Specialy For You</button>
+      <h1 style="font-size: 50px;">Discover Our Featured Properties</h1>
+      <div class="gardens">
+          <div class="">
+            <img class="" src="pictures/grandview-park-and-garden-phase-1.jpg" height="250px" width="400" style="border-radius: 30px;">
+         <div style="background-color: white; border-radius: 20px;">
+          <h2>
+              GRANDVIEW PARK AND GARDENS
+            </h2>
+            <p>
+              Atan Ota,Ogun Nigeria
+            </p>
+            <h2>#8,000,000</h2>
+            <p>
+              648 SqM Gym
+            </p>
+            <p>Payment Duration 36 month(s) max</p>
+            <button class="but">View Property</button>
+            <button class="but2">Subscribe</button>
+         </div>
+          </div>
+        <div class="">
+            <img class="" src="pictures/treasure-park-and-gardens-phase-2-city-of-david-1.jpg" height="250px" width="400" style="border-radius: 30px;">
+          <div style="background-color: white; border-radius: 20px;">
+            <h2>
+              Treasure Park and Gardens Phase 2
+            </h2>
+            <p>
+              Shimawa,Ogun Nigeria
+            </p>
+            <h2>#30,000,000</h2>
+            <p>
+              648 SqM Gym
+            </p>
+            <p>Payment Duration 36 month(s) max</p>
+            <button class="but">View Property</button>
+            <button class="but2">Subscribe</button>
+          </div>
+          </div>
+        <div class="">
+            <img class="" src="pictures/treasure-park-and-gardens-phase-3-capetown-estate-1.jpg" height="250px" width="400" style="border-radius: 30px;">
+          <div style="background-color: white; border-radius: 20px;">
+            <h2>
+              Treasure Park and Gardens Phase 3
+            </h2>
+            <p>
+              Shimawa,Ogun Nigeria
+            </p>
+            <h2>#30,000,000</h2>
+            <p>
+              648 SqM Gym
+            </p>
+            <p>Payment Duration 36 month(s) max</p>
+            <button class="but">View Property</button>
+            <button class="but2">Subscribe</button>
+          </div>
+          </div>
+          <div class="">
+            <img class="" src="pictures/west-park-and-gardens-phase-1-paradise-city-1.jpg" height="250px" width="400" style="border-radius: 30px;">
+          
+            <div style="background-color: white; border-radius: 20px;">
+              <h2>
+              west Park and Gardens Phase 1
+            </h2>
+            <p>
+              Aiyegun oleyo,Oyo Nigeria
+            </p>
+            <h2>#20,000,000</h2>
+            <p>
+              648 SqM Gym
+            </p>
+            <p>Payment Duration 36 month(s) max</p>
+            <button class="but">View Property</button>
+            <button class="but2">Subscribe</button>
+            </div>
+          </div>
+          <div class="">
+            <img class="" src="pictures/treasure-park-and-gardens-phase-1-1.jpg" height="250px" width="400" style="border-radius: 30px;">
+            <div style="background-color: white; border-radius: 20px;">
+              <h2>
+              Treasure Park and Gardens Phase 1
+            </h2>
+            <p>
+              Shimawa,Ogun Nigeria
+            </p>
+            <h2>#30,000,000</h2>
+            <p>
+              648 SqM Gym
+            </p>
+            <p>Payment Duration 36 month(s) max</p>
+            <button class="but">View Property</button>
+            <button class="but2">Subscribe</button>
+            </div>
+          </div>
+          <div class="">
+            <img src="pictures/sugarland-estate-1-316.jpg" height="250px" width="400" style="border-radius: 30px;">
+          
+            <div style="background-color: white; border-radius: 20px;">
+              <h2>
+              Sugarland Estate
+            </h2>
+            <p>
+              Ilisan,Ogun Nigeria
+            </p>
+            <h2>#100,000,000</h2>
+            <p>
+              648 SqM Gym
+            </p>
+            <p>Payment Duration 36 month(s) max</p>
+            <button class="but">View Property</button>
+            <button class="but2">Subscribe</button>
+            </div>
+          </div>
+        </div>
+    </div>
+        <button class="view">View All Properties</button>
+    </div>
+    <div style="background-image: url(pictures/property-location-bg.png); background-repeat: no-repeat; background-size: cover;  background-attachment: scroll;">
+      <button class="loc">Estate Location</button>
+      <h1 style="text-align: center;margin-top: 50px; margin-bottom: 50px;">Explore Our Estate Location</h1>
+      <div class="statepic">
+        <div>
+        <img src="pictures/niger-57.png" height="300" width="300" style="border-radius: 20px;">
+        <p>Niger</p>
+        <p><button class="cp">1</button>Estates</p>
+      </div>
+        <div>
+        <img src="pictures/ogun.jpg" height="300" width="300" style="border-radius: 20px;">
+        <p>Ogun</p>
+        <p><button class="cp">21</button>Estates</p>
+      </div>
+        <div>
+        <img src="pictures/plateau.png" height="300" width="300" style="border-radius: 20px;">
+        <p>Plateau</p>
+        <p><button class="cp">3</button>Estates</p>
+      </div>
+      </div>
+    </div>
+    <div style="background-color: rgb(233, 231, 231); height: 700px; width: 100%;">
+      <button class="tes">Testimonials</button>
+      <h1 style="text-align: center; font-size: xx-large; font-family: roboto; margin-top: 40px; margin-bottom: 40px;">Clients Testimonials</h1>
+      <div class="names">
+        <img src="pictures/adron-ileya-testimonials.png" height="80" width="80" style="border-radius: 50px;">
+      <img src="pictures/adron-allocation.png" height="80" width="80" style="border-radius: 50px;">
+      <img src="pictures/mrs-folashade-oluwatoyin.png" height="80" width="80" style="border-radius: 50px;">
+      <img src="pictures/professor-mrs-olagunju.png" height="80" width="80" style="border-radius: 50px;">
+      <img src="pictures/mrs-funke-ajibade.png" height="80" width="80" style="border-radius: 50px;">
+      </div>
+    </div>
+    <div class="last">
+       <div >
+        <img src="logos/adrlogo.svg" height="100" width="100">
+        <div style="margin-right: 70px; margin-bottom: 50px;">
+        <p>75, Adron Court, Adeyemo Akapo, Omole phase 1, Ojodu Lagos</p>
+        <h2>FOR ENQUIRIES</h2>
+        <P>09093934115, 08039897134, 08051011951
+         sales@adronhomes.com, md@adronhomes.com, telesales@adronhomes.com</P>
+        </div>
+      </div>
+      <div style="display: flex;flex-direction: column; margin-right: 100px;">
+        <h2>QUICK ACTIONS</h2>
+        <a href="file:///C:/Users/LENOVO/Desktop/my%20tech%20journey/suntech-html%20training/index.html/clients-login.html">Client Login</a>
+        <a href="file:///C:/Users/LENOVO/Desktop/my%20tech%20journey/suntech-html%20training/index.html/BUY-PROPERTIES.HTML">Buy properties</a>
+        <a href="">Estates Locations</a>
+        <a href="file:///C:/Users/LENOVO/Desktop/my%20tech%20journey/suntech-html%20training/index.html/HOME-LISTING.HTML">Home Listing</a>
+        <a href="file:///C:/Users/LENOVO/Desktop/my%20tech%20journey/suntech-html%20training/index.html/Testimonials.html">Testimonials</a>
+      </div>
+      <div style="display: flex;flex-direction: column; margin-right: 100px;">
+        <h2>COMPANY</h2>
+        <a href="file:///C:/Users/LENOVO/Desktop/my%20tech%20journey/suntech-html%20training/index.html/ABOUT-US.HTML">About Us</a>
+        <a href="file:///C:/Users/LENOVO/Desktop/my%20tech%20journey/suntech-html%20training/index.html/Client-partnership.html">Client Partnership</a>
+        <a href="file:///C:/Users/LENOVO/Desktop/my%20tech%20journey/suntech-html%20training/index.html/OUR-TEAM.HTML">Our Team</a>
+        <a href="file:///C:/Users/LENOVO/Desktop/my%20tech%20journey/suntech-html%20training/index.html/CAREERS.HTML">Careers</a>
+      </div>
+      <div style="display: flex;flex-direction: column; margin-right: 100px;">
+        <h2>HELP & RESOURCES</h2>
+        <a href="file:///C:/Users/LENOVO/Desktop/my%20tech%20journey/suntech-html%20training/index.html/FAQs.html">FAQs</a>
+        <a href="file:///C:/Users/LENOVO/Desktop/my%20tech%20journey/suntech-html%20training/index.html/TERMS-CONDITION.HTML">Terms & conditions</a>
+        <a href="file:///C:/Users/LENOVO/Desktop/my%20tech%20journey/suntech-html%20training/index.html/PRIVACY-POLICY.HTML">Privacy Policy</a>
+        <a href="">Blog</a>
+        <a href="">Corporate Social responsibilities</a>
+      </div>
+      <div style="margin-right: 100px;">
+        <h2>CLIENT SERVICES</h2>
+        <p>Adron Experience Center</p>
+        <p>09058590355, 09058590356
+        clientservice@adronhomes.com</p>
+      </div>
+    </div>
+
+    <footer class="footer">
+        <a href=""><img src="logos/in logo.png" height="20px" width="20px" style="float: right; margin-right: 150px; margin-top: 20px; border-radius: 10px;"></a>
+        <a href=""><img src="logos/wat logo.png" height="20px" width="20px" style="margin-right: 20px; float: right; margin-top: 20px; border-radius: 10px;"></a>
+        <a href=""><img src="logos/tiktok logo.png" height="20px" width="20px" style="margin-right: 20px; float: right; margin-top: 20px; border-radius: 10px;"></a>
+        <a href=""><img src="logos/x logo.png" height="20px" width="20px" style="margin-right: 20px; float: right; margin-top: 20px; border-radius: 10px;"> </a>
+        <a href=""><img src="logos/ig logo.png" height="20px" width="20px" style="margin-right: 20px; float: right; margin-top: 20px; border-radius: 10px;"></a>
+        <a href=""><img src="logos/fb logo.png" height="20px" width="20px" style="margin-right: 20px;float: right; margin-top: 20px; border-radius: 10px;"></a>
+      
+      <p style="margin-left: 150px;">&copy;2026 Adron Homes-All rights Reserved</p>
+    </footer>
+</body>
+</html>
